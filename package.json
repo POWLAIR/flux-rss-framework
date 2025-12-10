@@ -1,0 +1,14 @@
+{
+    "name": "rss-aggregator",
+    "version": "1.0.0",
+    "description": "RSS Feed Aggregator for GitHub Actions",
+    "main": "aggregate.js",
+    "scripts": {
+        "build": "node aggregate.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+        "rss": "^1.2.2",
+        "rss-parser": "^3.12.0"
+    }
+}
