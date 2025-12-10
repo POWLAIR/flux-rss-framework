@@ -27,7 +27,7 @@ async function aggregateFeeds() {
             const parsedFeed = await parser.parseURL(url);
             console.log(`✅ Fetched: ${parsedFeed.title || url}`);
 
-            parsedFeed.items.forEach(item => {
+            parsedFeed.items.slice(0, 5).forEach(item => {
                 allItems.push({
                     title: item.title,
                     description: item.content || item.contentSnippet || item.summary || '',
